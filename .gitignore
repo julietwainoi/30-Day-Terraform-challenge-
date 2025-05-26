@@ -8,6 +8,9 @@ terraform.tfstate.backup
 .terraform/*
 terraform/*
 
+# Allow .tf files in Submissions directory
+!**/Submissions/**/*.tf
+
 /Day10/Submissions/day10-update-Adaeze-69.md
 
 playground/*
