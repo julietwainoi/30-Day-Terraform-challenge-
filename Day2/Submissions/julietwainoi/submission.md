@@ -44,13 +44,13 @@ See images in the `architecture/` folder:
 
 ### Blog Post
 - **Title:** My Day 2: Deploying EC2 with Terraform
-- **Link:** [https://myblog.com/day2-terraform](https://myblog.com/day2-terraform)
+- **Link:** [https://myblog.com/day2-terraform](https://julietwainoi.github.io/blog2.html)
 
 ---
 
 ### Social Media
 - **Platform:** LinkedIn
-- **Post Link:** [https://linkedin.com/in/my-post-day2](https://linkedin.com/in/my-post-day2)
+- **Post Link:** [https://linkedin.com/in/my-post-day2](https://www.linkedin.com/in/juliet-wainoi/)
 
 ---
 
