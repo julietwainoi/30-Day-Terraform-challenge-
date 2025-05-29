@@ -42,8 +42,8 @@ See images in the `architecture/` folder:
 - **Link:** https://julietwainoi.github.io/blog4.html
 
 ## Social Media
-- **Platform:** [Twitter/LinkedIn]
-- **Post Link:** [URL to your social media post]
+- **Platform:** LinkedIn
+- **Post Link:** https://www.linkedin.com/in/juliet-wainoi/
 
 ## Notes and Observations
 deploying the cluster instances needs an ELB.

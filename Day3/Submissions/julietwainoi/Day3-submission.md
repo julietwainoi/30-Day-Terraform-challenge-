@@ -40,7 +40,7 @@ See images in the `architecture/` folder:
 - **Link:** https://julietwainoi.github.io/blog3.html
 ## Social Media
 - **Platform:** LinkedIn
-- **Post Link:** [URL to your social media post]
+- **Post Link:** https://www.linkedin.com/in/juliet-wainoi/
 
 ## Notes and Observations
 I have learned about local variables in terrafornm and how to use them
