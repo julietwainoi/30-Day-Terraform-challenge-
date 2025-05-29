@@ -1,9 +1,9 @@
-# Day 3 Submission
+# Day 4 Submission
 
 ## Personal Information
-- **Name:** JULIET WAINOI
-- **Date:** 2025-05-28
-- **GitHub Username:** julietwainoi
+- **Name:** Juliet Wanjiku
+- **Date:** May 29 2025
+- **GitHub Username:** julietwaioni
 
 ## Task Completion
 - [ ] Read Chapter 2 of "Terraform: Up & Running"
@@ -12,7 +12,8 @@
 - [ ] Deployed Web Server
 - [ ] Created Infrastructure Diagrams
 
-### Infrastructure Details 
+## Infrastructure Details
+
 **Note:** PLEASE SEE THIS IN DAY THREE.
 #### Single Server Deployment
 - **Region:** us-east-1
@@ -35,29 +36,31 @@
 See images in the `architecture/` folder:
 - `single-server.png`
 - `web-server.png`
+
 ## Blog Post
-- **Title:**  Getting Started with Terraform: Providers, Resources, and Data Sources
-- **Link:** https://julietwainoi.github.io/blog3.html
+- **Title:** Deploying a Highly Available Web App on AWS Using Terraform
+- **Link:** https://julietwainoi.github.io/blog4.html
+
 ## Social Media
-- **Platform:** LinkedIn
+- **Platform:** [Twitter/LinkedIn]
 - **Post Link:** [URL to your social media post]
 
 ## Notes and Observations
-I have learned about local variables in terrafornm and how to use them
+deploying the cluster instances needs an ELB.
 
 ## Additional Resources Used
-terraform documentation
+TerraFORM documentation
 
 ## Time Spent
 - Reading: 2 hours
-- Infrastructure Deployment: 2 hours
-- Diagram Creation: 1hour
+- Infrastructure Deployment: 2hours
+- Diagram Creation: 0.5 hours
 - Blog Writing: 1 hours
-- Total: 6 hours
+- Total: 5.5 hours
 
 ## Repository Structure
 ```
-Day3/
+Day4/
 └── Submissions/
     └── [Your GitHub Username]/
         ├── architecture/
