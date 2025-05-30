@@ -152,7 +152,6 @@ resource "aws_instance" "web_server" {
               systemctl enable httpd
               
               # Create a webpage showing instance details
-              TOKEN=$(curl -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")
               
               cat <<HTML > /var/www/html/index.html
               <!DOCTYPE html>
