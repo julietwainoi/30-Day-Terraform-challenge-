@@ -166,11 +166,7 @@ resource "aws_instance" "web_server" {
               </head>
               <body>
                   <h1>EC2 Instance Details</h1>
-                  <div class="detail">Instance ID: $(curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/instance-id)</div>
-                  <div class="detail">Instance Type: $(curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/instance-type)</div>
-                  <div class="detail">Availability Zone: $(curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/placement/availability-zone)</div>
-                  <div class="detail">Public IP: $(curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/public-ipv4)</div>
-                  <div class="detail">Private IP: $(curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/local-ipv4)</div>
+                  <h2>Redacted</h2>
               </body>
               </html>
               HTML
