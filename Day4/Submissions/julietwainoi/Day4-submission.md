@@ -6,11 +6,11 @@
 - **GitHub Username:** julietwaioni
 
 ## Task Completion
-- [ ] Read Chapter 2 of "Terraform: Up & Running"
-- [ ] Completed Required Hands-on Labs
-- [ ] Deployed Single Server
-- [ ] Deployed Web Server
-- [ ] Created Infrastructure Diagrams
+- [ x ] Read Chapter 2 of "Terraform: Up & Running"
+- [ x ] Completed Required Hands-on Labs
+- [ x ] Deployed Single Server
+- [ x ] Deployed Web Server
+- [ x ] Created Infrastructure Diagrams
 
 ## Infrastructure Details
 
@@ -62,17 +62,13 @@ TerraFORM documentation
 ```
 Day4/
 └── Submissions/
-    └── [Your GitHub Username]/
-        ├── architecture/
+    └── julietwaioni
+        ├── configurable-cluster-webserver/
         │   ├── single-server.png
-        │   └── web-server.png
-        ├── terraform/
-        │   ├── single-server/
-        │   │   └── main.tf
-        │   └── web-server/
-        │       └── main.tf
-        └── submission.md
-``` 
+        │   └── main.tf
+        ├── Day4-submission
+  
+
 
 
 

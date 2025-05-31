@@ -6,11 +6,11 @@
 - **GitHub Username:** julietwainoi
 
 ## Task Completion
-- [ ] Read Chapter 2 of "Terraform: Up & Running"
-- [ ] Completed Required Hands-on Labs
-- [ ] Deployed Single Server
-- [ ] Deployed Web Server
-- [ ] Created Infrastructure Diagrams
+- [ x ] Read Chapter 2 of "Terraform: Up & Running"
+- [ x ] Completed Required Hands-on Labs
+- [ x ] Deployed Single Server
+- [ x ] Deployed Web Server
+- [ ]x  Created Infrastructure Diagrams
 
 ### Infrastructure Details 
 **Note:** PLEASE SEE THIS IN DAY THREE.
@@ -59,17 +59,11 @@ terraform documentation
 ```
 Day3/
 └── Submissions/
-    └── [Your GitHub Username]/
-        ├── architecture/
-        │   ├── single-server.png
-        │   └── web-server.png
+    └── julietwainoi/
         ├── terraform/
-        │   ├── single-server/
-        │   │   └── main.tf
-        │   └── web-server/
-        │       └── main.tf
-        └── submission.md
-``` 
+        |   └── main.tf
+        |____Day3-submission.md
+
 
 
 

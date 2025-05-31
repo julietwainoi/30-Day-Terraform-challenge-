@@ -6,13 +6,13 @@
 - **GitHub Username:** julietwainoi
 
 ## Task Completion
-- [ ] Read Chapter 1 of "Terraform: Up & Running"
-- [ ] Completed Required Hands-on Labs
-- [ ] Set up AWS Account
-- [ ] Installed Terraform
-- [ ] Installed and Configured AWS CLI
-- [ ] Installed VSCode with AWS Plugin
-- [ ] Configured VSCode for AWS
+- [ x ] Read Chapter 1 of "Terraform: Up & Running"
+- [ x ] Completed Required Hands-on Labs
+- [ x ] Set up AWS Account
+- [ x ] Installed Terraform
+- [ x ] Installed and Configured AWS CLI
+- [ x ] Installed VSCode with AWS Plugin
+- [ x ] Configured VSCode for AWS
 
 ## Blog Post
 - **Title:** What is Infrastructure as Code (IaC) and Why It's Transforming DevOps 

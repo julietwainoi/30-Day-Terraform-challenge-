@@ -74,3 +74,16 @@ See images in the `architecture/` folder:
 - **Blog Writing:** 1 hour
 - **Total:** 4 hours
 
+Day3/
+└── Submissions/
+    └── julietwainoi/
+        ├── architecture/
+        │   ├── single-server.png
+        │   └── web-server.png
+        ├── terraform/
+        │   ├── single-server/
+        │   │   └── main.tf
+        │   └── web-server/
+        │       └── main.tf
+        └── DAY2-submission.md
+``` 
