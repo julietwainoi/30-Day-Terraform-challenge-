@@ -74,7 +74,7 @@ See images in the `architecture/` folder:
 - **Blog Writing:** 1 hour
 - **Total:** 4 hours
 
-Day3/
+Day2/
 └── Submissions/
     └── julietwainoi/
         ├── architecture/
