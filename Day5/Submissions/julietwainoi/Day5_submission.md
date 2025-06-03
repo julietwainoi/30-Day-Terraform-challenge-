@@ -9,7 +9,7 @@
 - [ x ] Complete Chapter 2 and start Chapter 3 how to manage Terraform state.
 - [ x] Completed Required Hands-on Labs
 - [ x] Use Terraform to scale your web server cluster to handle increased load.
-- [ x] nderstand the concept of state. what happens when you manully update the state file.
+- [ x] understand the concept of state. what happens when you manully update the state file.
 ## Infrastructure Details
 #### Web Server Deployment
 - **Region:** us-east-1
