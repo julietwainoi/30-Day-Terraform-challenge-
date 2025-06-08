@@ -241,3 +241,4 @@ jobs:
           if [ "$HAS_ISSUES" = "true" ]; then
             echo "Validation checks failed. Please fix the issues before merging."
             exit 1 
+          fi
