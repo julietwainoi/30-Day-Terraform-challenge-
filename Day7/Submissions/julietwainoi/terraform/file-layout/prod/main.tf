@@ -8,7 +8,7 @@ module "s3" {
   source      = "../../modules/s3"
   bucket_name = "my-app-prod-bucket"
 
-   tags = {
+  tags = {
     Environment = "prod"
     ManagedBy   = "Terraform"
   }

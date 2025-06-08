@@ -20,10 +20,10 @@ resource "aws_security_group" "web_sg" {
 }
 
 resource "aws_instance" "web" {
-  count         = var.instance_count
-  ami           = var.ami_id
-  instance_type = var.instance_type
-  key_name      = var.key_name
+  count           = var.instance_count
+  ami             = var.ami_id
+  instance_type   = var.instance_type
+  key_name        = var.key_name
   security_groups = [aws_security_group.web_sg.name]
 
   user_data = <<-EOF
