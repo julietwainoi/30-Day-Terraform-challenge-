@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -49,7 +50,7 @@ jobs:
               echo "EOF" >> $GITHUB_ENV
             fi
           done
-          
+
           if [ $INVALID_FILES -eq 0 ]; then
             echo "FILE_STRUCTURE_RESULTS<<EOF" >> $GITHUB_ENV
             echo "### ✅ File Structure Check Passed" >> $GITHUB_ENV
@@ -103,19 +104,6 @@ jobs:
               echo "$TAGS" >> $GITHUB_ENV
               echo "\`\`\`" >> $GITHUB_ENV
               echo "" >> $GITHUB_ENV
-            fi
-
-            # Check for missing closing brackets
-            if grep -n "{" "$tf_file" | wc -l > bracket_open && grep -n "}" "$tf_file" | wc -l > bracket_close; then
-              if [ "$(cat bracket_open)" -ne "$(cat bracket_close)" ]; then
-                SECURITY_ISSUES=true
-                FILE_HAS_ISSUES=true
-                echo "HAS_ISSUES=true" >> $GITHUB_ENV
-                echo "❌ Unmatched Brackets in \`$tf_file\`:" >> $GITHUB_ENV
-                echo "- Opening brackets: $(cat bracket_open)" >> $GITHUB_ENV
-                echo "- Closing brackets: $(cat bracket_close)" >> $GITHUB_ENV
-                echo "" >> $GITHUB_ENV
-              fi
             fi
             
             if [ "$FILE_HAS_ISSUES" = false ]; then
@@ -171,7 +159,6 @@ jobs:
             cd $dir
             echo "Checking directory: \`$dir\`" >> $GITHUB_ENV
             
-            # Initialize without backend and providers
             if ! terraform init -backend=false > init_output 2>&1; then
               VALIDATION_ISSUES=true
               echo "HAS_ISSUES=true" >> $GITHUB_ENV
@@ -184,8 +171,7 @@ jobs:
               echo "✅ Initialization successful" >> $GITHUB_ENV
               echo "" >> $GITHUB_ENV
             fi
-            
-            # Run validation
+
             if ! terraform validate -no-color > validate_output 2>&1; then
               VALIDATION_ISSUES=true
               echo "HAS_ISSUES=true" >> $GITHUB_ENV
@@ -240,4 +226,5 @@ jobs:
         run: |
           if [ "$HAS_ISSUES" = "true" ]; then
             echo "Validation checks failed. Please fix the issues before merging."
-            exit 1 
+            exit 1
+          fi
