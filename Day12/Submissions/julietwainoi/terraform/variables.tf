@@ -1,5 +1,9 @@
+variable "vpc_id" {}
+variable "subnet_ids" {
+  type = list(string)
+}
 variable "ami_id" {}
-variable "active_env" {}
-variable "vpc_cidr" {
-  default = "10.0.0.0/16"
+variable "active_env" {
+  type = string
+  description = "The environment to route traffic to (blue or green)"
 }
