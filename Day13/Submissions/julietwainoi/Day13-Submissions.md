@@ -14,7 +14,7 @@
 ## Infrastructure Details
 
 ### Dealing with Secret manager
-- **Key Features:** getting the secrets using Data and then outputing the db-PASSWORD
+- **Key Features:** getting the secrets using Data and then outputing the db-PASSWORD 
 
 
 
