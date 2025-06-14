@@ -1,9 +1,10 @@
-variable "vpc_id" {}
-variable "subnet_ids" {
-  type = list(string)
+variable "ami_id" {
+  description = "The AMI ID to use for the instances"
+  type        = string
 }
-variable "ami_id" {}
+
 variable "active_env" {
-  type = string
-  description = "The environment to route traffic to (blue or green)"
+  description = "The currently active environment: blue or green"
+  type        = string
+  default     = "blue"
 }

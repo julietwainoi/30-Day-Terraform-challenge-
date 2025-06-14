@@ -28,10 +28,10 @@
 
 
 ## Notes and Observations
-[Share your key learnings, challenges faced, and how you overcame them]
+count does not work with output.
 
 ## Additional Resources Used
-[List any additional resources you found helpful]
+terraform documenttation
 
 ## Time Spent
 - Reading: 2hrs
@@ -42,7 +42,7 @@
 
 ## Repository Structure
 ```
-Day10/
+Day11/
 └── Submissions/
     └── julietwainoi/
         ├── terraform/module/EC2/
