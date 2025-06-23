@@ -3,7 +3,7 @@ terraform {
     organization = "test1-organisation"
 
     workspaces {
-      name = "your-workspace-name"
+      name = "30-Day-Terraform-challenge-"
     }
   }
 }
