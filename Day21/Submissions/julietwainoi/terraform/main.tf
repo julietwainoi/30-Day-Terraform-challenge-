@@ -9,7 +9,8 @@ terraform {
 }
 
 module "vpc" {
-  source  = "test1-organisation/vpc/aws"
+ source = "app.terraform.io/test1-organisation/vpc/aws"
+
   version = "1.0.2"
 
   # Optionally override default inputs if needed
