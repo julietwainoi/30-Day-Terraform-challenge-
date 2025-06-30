@@ -10,7 +10,7 @@ terraform {
 
 module "vpc" {
   source  = "julietwainoi/vpc/aws"
-  version = "1.0.1"
+  version = "1.0.2"
 
   # Optionally override default inputs if needed
   vpc_name        = "production-vpc"
