@@ -4,6 +4,7 @@ provider "aws" {
 
 resource "aws_s3_bucket" "tf_state" {
   bucket = "terraform-state-myproject-56"
+  force_destroy = true
 }
 
 resource "aws_s3_bucket_server_side_encryption_configuration" "tf_state" {

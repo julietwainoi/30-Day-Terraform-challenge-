@@ -6,11 +6,20 @@ provider "aws" {
 resource "aws_s3_bucket" "static_site" {
   bucket = var.bucket_name
 }
-
-resource "aws_s3_bucket_acl" "static_site_acl" {
+resource "aws_s3_bucket_public_access_block" "static_site" {
   bucket = aws_s3_bucket.static_site.id
-  acl    = "public-read"
+
+  block_public_acls       = false
+  block_public_policy     = false
+  ignore_public_acls      = false
+  restrict_public_buckets = false
 }
+
+
+#resource "aws_s3_bucket_acl" "static_site_acl" {
+  #bucket = aws_s3_bucket.static_site.id
+ # acl    = "public-read"
+#}
 
 resource "aws_s3_bucket_website_configuration" "static_site" {
   bucket = aws_s3_bucket.static_site.id
