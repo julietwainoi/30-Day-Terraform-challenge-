@@ -22,7 +22,7 @@ provider "aws" {
 module "vpc" {
 source = "app.terraform.io/test1-organisation/vpc/aws"
 
-version = "1.0.2"
+version = "1.0.3"
 
 
 
