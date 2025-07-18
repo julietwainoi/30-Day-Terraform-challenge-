@@ -7,7 +7,7 @@ on:
     tags:
       - 'v*.*.*'             # Only trigger on version tags (e.g., v1.0.0)
     paths:
-      - 'Day21/**'           # Only trigger if changes are made in Day2
+      - 'Day21/**'           # Only trigger if changes are made in Day21
 
 jobs:
   validate:
