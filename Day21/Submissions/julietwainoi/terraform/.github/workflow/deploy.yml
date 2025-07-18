@@ -32,7 +32,7 @@ jobs:
         run: terraform validate
 
   deploy:
-    name: Deploy to Terraform Cloud
+    name: Deploy to Terraform Cloud (Tag-Based)
     if: startsWith(github.ref, 'refs/tags/v')      # Only run on version tag pushes
     needs: validate
     runs-on: ubuntu-latest
@@ -54,11 +54,11 @@ jobs:
         working-directory: Day21
         run: terraform apply -auto-approve
 
-    deploy-to-terraform-cloud:
-      name: Deploy to Terraform Cloud
-      if: startsWith(github.ref='refs/heads/week5')      # Only run on version tag pushes
-      needs: validate
-      runs-on: ubuntu-latest
+  deploy_to_branch:
+    name: Deploy to Terraform Cloud (week5 branch)
+    if: startsWith(github.ref, 'refs/heads/week5')      # Runs only on week5 branch
+    needs: validate
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
@@ -76,4 +76,3 @@ jobs:
       - name: Terraform Apply
         working-directory: Day21
         run: terraform apply -auto-approve
-
