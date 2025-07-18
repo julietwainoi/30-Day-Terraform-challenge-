@@ -53,3 +53,27 @@ jobs:
       - name: Terraform Apply
         working-directory: Day21
         run: terraform apply -auto-approve
+
+    deploy-to-terraform-cloud:
+      name: Deploy to Terraform Cloud
+      if: startsWith(github.ref='refs/heads/week5')      # Only run on version tag pushes
+      needs: validate
+      runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          cli_config_credentials_token: ${{ secrets.TERRAFORMCLOUD }}
+
+      - name: Terraform Init
+        working-directory: Day21
+        run: terraform init
+
+      - name: Terraform Apply
+        working-directory: Day21
+        run: terraform apply -auto-approve
+
